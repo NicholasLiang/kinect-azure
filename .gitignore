@@ -15,6 +15,9 @@ Thumbs.db
 /examples/**/*.onnx
 /examples/**/*.exe
 
+# ignore yarn lock files
+**/*.lock
+
 # Logs
 logs
 *.log

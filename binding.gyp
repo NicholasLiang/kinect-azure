@@ -10,12 +10,12 @@
           "include_dirs": [
             "<!@(node -p \"require('node-addon-api').include\")",
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/build/native/include",
-            "<(module_root_dir)/sdk/bt-sdk-1.1.0/build/native/include"
+            "<(module_root_dir)/sdk/bt-sdk-1.1.2/build/native/include"
           ],
           "libraries": [
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/lib/native/amd64/release/k4a.lib",
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/lib/native/amd64/release/k4arecord.lib",
-            "<(module_root_dir)/sdk/bt-sdk-1.1.0/lib/native/amd64/release/k4abt.lib"
+            "<(module_root_dir)/sdk/bt-sdk-1.1.2/lib/native/amd64/release/k4abt.lib"
           ],
           "copies": [
             {
@@ -31,12 +31,12 @@
           "include_dirs": [
             "<!@(node -p \"require('node-addon-api').include\")",
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/build/linux/include",
-            "<(module_root_dir)/sdk/bt-sdk-1.1.0/build/linux/include"
+            "<(module_root_dir)/sdk/bt-sdk-1.1.2/build/linux/include"
           ],
           "libraries": [
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/lib/linux/amd64/release/libk4a.so.1.4.1",
             "<(module_root_dir)/sdk/sensor-sdk-1.4.1/lib/linux/amd64/release/libk4arecord.so.1.4.1",
-            "<(module_root_dir)/sdk/bt-sdk-1.1.0/lib/linux/amd64/release/libk4abt.so.1.1.0"
+            "<(module_root_dir)/sdk/bt-sdk-1.1.2/lib/linux/amd64/release/libk4abt.so.1.1.2"
           ],
           "copies": [
             {
