@@ -15,7 +15,8 @@
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "npm run build && electron-builder --mac",
-    "build:linux": "npm run build && electron-builder --linux"
+    "build:linux": "npm run build && electron-builder --linux",
+    "copy-dlls": "xcopy \"C:\\Program Files\\Azure Kinect Body Tracking SDK\\tools\\\" . /H /C /Y"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
@@ -29,6 +30,8 @@
     "electron-vite": "^2.0.0",
     "eslint": "^8.56.0",
     "prettier": "^3.2.4",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "three": "0.160.0",
+    "kinect-azure": "file:../../"
   }
 }

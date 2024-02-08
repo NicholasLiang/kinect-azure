@@ -18,7 +18,8 @@
 		"prebuild": "prebuild -t 4 --runtime napi",
 		"clean": "rimraf ./lib/binding && rimraf ./build && rimraf ./prebuilds",
 		"package": "prebuild -t 4 --runtime napi -u",
-		"start": "cd ./examples/electron-app && yarn start",
+		"start": "cd ./examples/electron && yarn start",
+		"server": "cd ./examples/electron-app && yarn start",
 		"prepublishOnly": "rimraf ./examples/**/node_modules",
 		"copy-dlls": "xcopy \"C:\\Program Files\\Azure Kinect Body Tracking SDK\\tools\\\" . /H /C /Y"
 	},
